@@ -1,0 +1,24 @@
+device = "cuda:0"
+path_to_state = ".cache/gan.state"
+
+[data]
+incident_light = [1.0, 1.0, 1.0]
+use_custom_transform = false
+
+[training]
+load_state = false
+path_to_patches = "/media/DataSSD/datasets/histopathology/lung_patches/"
+batch_size = 32
+num_workers = 4
+epochs = 100
+learning_rate = 0.0002
+log_interval = 1
+
+[testing]
+load_state = false
+path_to_patches = "/media/DataSSD/datasets/histopathology/lung_patches/"
+batch_size = 32
+num_workers = 4
+epochs = 100
+learning_rate = 0.0002
+log_interval = 1
